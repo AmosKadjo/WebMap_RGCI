@@ -1,0 +1,63 @@
+#entete{
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	background-color : white;
+	z-index : 1000;
+	box-shadow : 0 2px 4px;
+	align-items: center;
+    border-bottom: 2px solid orange;
+	border-top: 2px solid orange;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.logo-emblem {
+    display: flex;
+    align-items: center;
+	position : absolute;
+	top : 0px;
+	right : 0px;
+}
+
+.emblem {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+.rgci-logo {
+    display: flex;
+    align-items: center;
+}
+
+.rgci-text {
+	color:black;
+	font-weight:bold; 
+	font-style:normal;
+	opacity:1;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.flag {
+    width: 15px;
+}
