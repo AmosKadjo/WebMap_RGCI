@@ -144,42 +144,99 @@
     <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
 
 
-	<style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        #map {
-            width: 100%;
-            height: 90vh;
-        }
+<style>
+    /* Réinitialisation des marges et tailles */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Conteneur principal */
+    .container {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    /* Carte responsive */
+    #map {
+        width: 100%;
+        height: 80vh; /* Ajustement pour les petits écrans */
+    }
+
+    /* Champs de saisie et boutons */
+    input {
+        padding: 10px;
+        margin: 5px;
+        width: 90%; /* S'adapte à la largeur de l'écran */
+        max-width: 300px; /* Taille maximale pour éviter les trop grands champs */
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Texte du temps */
+    #time {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    /* Adaptation pour tablettes et petits écrans */
+    @media (max-width: 768px) {
         .container {
-            padding-top: 25px;
-			margin-bottom: -15px;
-            text-align: center;
+            padding-top: 15px;
         }
+
+        #map {
+            height: 75vh; /* Ajustement pour mieux remplir l'écran */
+        }
+
         input {
-            padding: 5px;
-            margin: 5px;
-            width: 200px;
+            width: 80%;
         }
+    }
+
+    /* Adaptation pour smartphones */
+    @media (max-width: 480px) {
+        .container {
+            padding-top: 10px;
+        }
+
+        #map {
+            height: 70vh; /* Ajustement pour petits écrans */
+        }
+
+        input {
+            width: 95%; /* Remplit presque tout l'écran */
+        }
+
         button {
-            padding: 8px 12px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
+            width: 95%; /* Remplit mieux l'espace */
+            font-size: 14px;
+            padding: 8px;
         }
-        button:hover {
-            background-color: #0056b3;
-        }
+
         #time {
-            font-size: 18px;
-            margin-top: 10px;
+            font-size: 16px;
         }
-    </style>
+    }
+</style>
+
 	
 </head>
 <body>
